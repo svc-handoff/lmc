@@ -3,7 +3,7 @@
     "name": "South-View Cemetery RAG Knowledge Base",
     "version": "2.2",
     "built_from": "Henderson, D.L. South-View: City of the Dead. Carrelspin Press, Dunwoody, GA, 2018. ISBN 978-0-9985772-0-3",
-    "total_person_records": 308,
+    "total_person_records": 309,
     "primary_biographical_entries": 229,
     "spouse_and_family_mentions": 78,
     "historical_context_chunks": 8,
@@ -18,7 +18,7 @@
     },
     "rag_usage_notes": "For semantic search, embed each record's biography/content field. For structured queries (e.g., 'who died in 1977', 'athletes buried here'), filter on death_year, occupations, or era fields. FAQ records are ideal for exact-match retrieval. Historical context chunks should be retrieved for any question about the cemetery's history, founding, significance, or funerary traditions. Cemetery profile should always be included for location/hours/contact queries.",
     "cleaning_notes": "v2.1: rebuilt people from the Biographical Dictionary only. Removed duplicate second-pass records, photo-caption and epitaph fragments, and records whose names or text were unreadable. Repaired OCR errors, restored names for spouse entries, and separated text that had been merged across entries. Added a 'spouse' field where the book lists a spouse entry.",
-    "prominent_figure_profiles": 12,
+    "prominent_figure_profiles": 13,
     "v2_2_notes": "Added researched profiles for prominent figures from encyclopedias, archives and news obituaries (see research_notes/). Each section cites its own sources by URL. People not in Henderson (2018) were added as new person records tagged added_by='prominent_research'."
   },
   "cemetery_profile": {
@@ -5394,6 +5394,51 @@
       ],
       "prominent": true,
       "added_by": "prominent_research"
+    },
+    {
+      "id": "person_0308",
+      "type": "buried_person",
+      "full_name": "Jean Childs Young",
+      "last_name": "Young",
+      "birth_year": 1933,
+      "death_year": 1994,
+      "era": "Late 20th century",
+      "occupations": [
+        "Educator",
+        "Civil Rights Activist",
+        "Children's Advocate"
+      ],
+      "affiliated_organizations": [],
+      "also_known_as": [
+        "Jean Young",
+        "Jean Childs"
+      ],
+      "biography": "Jean Childs Young was born on July 1, 1933, in Marion, Alabama, the youngest of five children of Norman and Idella Childs. Her mother was a teacher who later became the first Black woman on Marion's city council, and her father ran a bakery and made candy. Jean Childs Young met Andrew Young in the summer of 1952, when he came to Marion as a young Congregational minister, and they married there on June 7, 1954. They had four children: Andrea, Lisa, Paula and Andrew Jackson \"Bo\" Young III. Jean Childs Young taught elementary school in Thomasville, Georgia, and Hartford, Connecticut, and then at Whitefoord and Slaton elementary schools in Atlanta from 1962 to 1972. She became a coordinator of elementary and preschool curriculum for Atlanta Public Schools and a lead teacher in the federal Teacher Corps, and in 1970 she wrote Bridging the Gap: Home and School. She was part of the leadership team that created Atlanta Junior College, later Atlanta Metropolitan State College, where she served as its first public relations officer, taught reading, and held several administrative posts. President Jimmy Carter chose her to chair the United States commission for the United Nations' 1979 International Year of the Child, an observance in which more than 100 countries took part. She also served on the boards of the Children's Defense Fund and UNICEF and chaired the board of the APEX Museum in Atlanta.",
+      "source": "Web research; see web_sources",
+      "web_sources": [
+        {
+          "title": "Jean Childs Young (1933-1994)",
+          "url": "https://www.georgiaencyclopedia.org/articles/history-archaeology/jean-childs-young-1933-1994",
+          "publisher": "New Georgia Encyclopedia"
+        },
+        {
+          "title": "Jean Childs Young, International Civil Rights Walk of Fame",
+          "url": "https://www.nps.gov/features/malu/feat0002/wof/Jean_Young.htm",
+          "publisher": "National Park Service"
+        },
+        {
+          "title": "Celebration of the Life of Jean Childs Young (funeral program)",
+          "url": "https://dlg.usg.edu/record/aarl_afpc_youngjeanchilds19940919",
+          "publisher": "Digital Library of Georgia (Auburn Avenue Research Library)"
+        },
+        {
+          "title": "Jean Childs Young",
+          "url": "https://en.wikipedia.org/wiki/Jean_Childs_Young",
+          "publisher": "Wikipedia"
+        }
+      ],
+      "prominent": true,
+      "added_by": "prominent_research"
     }
   ],
   "references": [
@@ -6937,6 +6982,243 @@
           "title": "South-View Cemetery historical marker",
           "url": "https://georgiahistory.com/ghmi_marker_updated/south-view-cemetery/",
           "publisher": "Georgia Historical Society"
+        }
+      ]
+    },
+    {
+      "id": "pf_jean_young",
+      "person_id": "person_0308",
+      "full_name": "Jean Childs Young",
+      "also_known_as": [
+        "Jean Young",
+        "Jean Childs"
+      ],
+      "birth_year": 1933,
+      "death_year": 1994,
+      "lifespan": "July 1, 1933 – September 16, 1994",
+      "tagline": "Educator and children's advocate who chaired the U.S. effort for the 1979 International Year of the Child",
+      "occupations": [
+        "Educator",
+        "Civil Rights Activist",
+        "Children's Advocate"
+      ],
+      "burial": "Jean Childs Young is buried at South-View Cemetery. Her funeral program, held in the Auburn Avenue Research Library's collection and digitized by the Digital Library of Georgia, names South-View Cemetery in Atlanta as the place of interment.",
+      "sections": [
+        {
+          "heading": "Early life and family",
+          "text": "Jean Childs Young was born on July 1, 1933, in Marion, Alabama, the youngest of five children of Norman and Idella Childs. Her mother was a teacher who later became the first Black woman on Marion's city council, and her father ran a bakery and made candy. Jean Childs Young met Andrew Young in the summer of 1952, when he came to Marion as a young Congregational minister, and they married there on June 7, 1954. They had four children: Andrea, Lisa, Paula and Andrew Jackson \"Bo\" Young III.",
+          "sources": [
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "heading": "Education",
+          "text": "Jean Childs Young graduated from Lincoln Normal School in Marion in 1950 and went on to Manchester College in Indiana. There, in 1953, she became the first African American student elected May Queen. She earned a bachelor's degree in elementary education from Manchester in 1954 and a master's degree in education from Queens College in New York City in 1961. She later received honorary doctorates, including from Loyola University and Manchester College.",
+          "sources": [
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "heading": "Career and achievements",
+          "text": "Jean Childs Young taught elementary school in Thomasville, Georgia, and Hartford, Connecticut, and then at Whitefoord and Slaton elementary schools in Atlanta from 1962 to 1972. She became a coordinator of elementary and preschool curriculum for Atlanta Public Schools and a lead teacher in the federal Teacher Corps, and in 1970 she wrote Bridging the Gap: Home and School. She was part of the leadership team that created Atlanta Junior College, later Atlanta Metropolitan State College, where she served as its first public relations officer, taught reading, and held several administrative posts. President Jimmy Carter chose her to chair the United States commission for the United Nations' 1979 International Year of the Child, an observance in which more than 100 countries took part. She also served on the boards of the Children's Defense Fund and UNICEF and chaired the board of the APEX Museum in Atlanta.",
+          "sources": [
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "heading": "Civil rights and civic life",
+          "text": "Jean Childs Young wrote curriculum for the Southern Christian Leadership Conference's Citizenship Schools, which taught Black Southerners the skills needed to register to vote. She took part in the 1963 March on Washington, the 1965 Selma to Montgomery march and the 1968 Poor People's Campaign, and she opened her home to movement workers. In 1970 she founded Women for Andrew Young during her husband's first run for Congress. As Atlanta's first lady while Andrew Young was mayor in the 1980s, she founded the Mayor's Task Force on Public Education in 1981. The task force created the Dream Jamboree, a college and career fair for high school students, and the Mayor's Scholars program. She also co-founded the Atlanta/Fulton Commission on Children and Youth and was active in the League of Women Voters.",
+          "sources": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "heading": "Legacy and honors",
+          "text": "Jean Childs Young was named Georgia's Democratic Woman of the Year in 1983. She received the NAACP Distinguished Leadership Award in 1989 and a YWCA Women of Achievement award in 1993. In 1995 Atlanta renamed the renovated Southwest High School as Jean Childs Young Middle School. In 2007 her footstep was added to the International Civil Rights Walk of Fame at the Martin Luther King Jr. National Historic Site. Her papers are held at the Auburn Avenue Research Library in Atlanta.",
+          "sources": [
+            1,
+            2,
+            4
+          ]
+        },
+        {
+          "heading": "Death and funeral",
+          "text": "Jean Childs Young was diagnosed with cancer in 1991 and died in Atlanta on September 16, 1994, at age 61. Her funeral was held on Monday, September 19, 1994, at First Congregational Church in Atlanta, where she had long served as Sunday school superintendent. Coretta Scott King gave a tribute and Maya Angelou gave the benediction, and she was buried at South-View Cemetery. Her short reflection What to Remember About Me was printed in the program.",
+          "sources": [
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "heading": "Did you know?",
+          "text": "Jean Childs Young once picketed Rich's Department Store in downtown Atlanta during the civil rights movement. She marched from Selma to Montgomery in 1965 with two of her young daughters. As Atlanta's first lady she traveled to Egypt, Zimbabwe and Soviet Georgia, and she later led a Friendship Force trip to South Africa. Her mother, Idella Jones Childs, was the first Black woman elected to the Marion, Alabama, city council.",
+          "sources": [
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "heading": "Where sources disagree",
+          "text": "Sources differ on a few details about Jean Childs Young. Her funeral program and Wikipedia say President Carter appointed her in 1978, while the New Georgia Encyclopedia describes her as chair of the 1979 International Year of the Child without giving an appointment year; both are consistent with an appointment in 1978 ahead of the 1979 observance. The program says she chaired the mayor's education task force for seven years, while the encyclopedia says several years. The New Georgia Encyclopedia says she died of cancer and Wikipedia specifies liver cancer, while the funeral program says only that she died after a long illness. The Digital Library of Georgia's catalog record lists a funeral date of September 9, 1994, but the program itself is dated September 19, 1994.",
+          "sources": [
+            1,
+            3,
+            4
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "year": "1933",
+          "event": "Born July 1 in Marion, Alabama.",
+          "sources": [
+            1,
+            3
+          ]
+        },
+        {
+          "year": "1950",
+          "event": "Graduated from Lincoln Normal School in Marion.",
+          "sources": [
+            1
+          ]
+        },
+        {
+          "year": "1953",
+          "event": "Became the first African American May Queen at Manchester College.",
+          "sources": [
+            1
+          ]
+        },
+        {
+          "year": "1954",
+          "event": "Earned a bachelor's degree in elementary education and married Andrew Young on June 7.",
+          "sources": [
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "year": "1961",
+          "event": "Earned a master's degree in education from Queens College, New York.",
+          "sources": [
+            1
+          ]
+        },
+        {
+          "year": "1962",
+          "event": "Began teaching at Atlanta elementary schools, continuing until 1972.",
+          "sources": [
+            1
+          ]
+        },
+        {
+          "year": "1963",
+          "event": "Took part in the March on Washington.",
+          "sources": [
+            1,
+            3
+          ]
+        },
+        {
+          "year": "1965",
+          "event": "Joined the Selma to Montgomery march.",
+          "sources": [
+            1,
+            2,
+            4
+          ]
+        },
+        {
+          "year": "1968",
+          "event": "Took part in the Poor People's Campaign.",
+          "sources": [
+            1,
+            2
+          ]
+        },
+        {
+          "year": "1970",
+          "event": "Wrote Bridging the Gap: Home and School and founded Women for Andrew Young.",
+          "sources": [
+            1,
+            4
+          ]
+        },
+        {
+          "year": "1979",
+          "event": "Chaired the U.S. commission for the International Year of the Child.",
+          "sources": [
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "year": "1981",
+          "event": "Founded the Mayor's Task Force on Public Education, which created the Dream Jamboree.",
+          "sources": [
+            1,
+            4
+          ]
+        },
+        {
+          "year": "1994",
+          "event": "Died September 16 in Atlanta; funeral September 19 and burial at South-View Cemetery.",
+          "sources": [
+            1,
+            3
+          ]
+        },
+        {
+          "year": "1995",
+          "event": "Southwest High School renamed Jean Childs Young Middle School.",
+          "sources": [
+            1,
+            4
+          ]
+        },
+        {
+          "year": "2007",
+          "event": "Footstep added to the International Civil Rights Walk of Fame.",
+          "sources": [
+            1,
+            2
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "Jean Childs Young (1933-1994)",
+          "url": "https://www.georgiaencyclopedia.org/articles/history-archaeology/jean-childs-young-1933-1994",
+          "publisher": "New Georgia Encyclopedia"
+        },
+        {
+          "title": "Jean Childs Young, International Civil Rights Walk of Fame",
+          "url": "https://www.nps.gov/features/malu/feat0002/wof/Jean_Young.htm",
+          "publisher": "National Park Service"
+        },
+        {
+          "title": "Celebration of the Life of Jean Childs Young (funeral program)",
+          "url": "https://dlg.usg.edu/record/aarl_afpc_youngjeanchilds19940919",
+          "publisher": "Digital Library of Georgia (Auburn Avenue Research Library)"
+        },
+        {
+          "title": "Jean Childs Young",
+          "url": "https://en.wikipedia.org/wiki/Jean_Childs_Young",
+          "publisher": "Wikipedia"
         }
       ]
     },

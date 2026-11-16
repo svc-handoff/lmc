@@ -16,7 +16,7 @@ PROFILE_GLOB = os.path.join(ROOT, "research_notes", "profiles_*.json")
 ADDED_TAG = "prominent_research"
 
 # Display order for the Prominent figures tab.
-ORDER = ["pf_king_sr", "pf_alberta_king", "pf_ad_king", "pf_aaron", "pf_bond", "pf_hamilton", "pf_turner",
+ORDER = ["pf_king_sr", "pf_alberta_king", "pf_ad_king", "pf_aaron", "pf_bond", "pf_hamilton", "pf_jean_young", "pf_turner",
          "pf_herndon", "pf_russell", "pf_jesse_hill", "pf_jw_dobbs", "pf_mattiwilda_dobbs"]
 
 
@@ -69,6 +69,19 @@ def main() -> None:
         for k, v in bad.items():
             print(k, v)
         sys.exit("Fix the problems above before merging.")
+
+    # Profiles may have been edited in the database since the last merge (e.g. with add_content.py).
+    # Rebuilding from the research files would erase those edits, so stop and say which ones changed.
+    by_fig = {f["id"]: f for f in figures}
+    edited = []
+    for current in db.get("prominent_figures", []):
+        source = by_fig.get(current["id"])
+        strip = lambda d: {k: v for k, v in d.items() if k != "person_id"}
+        if source is None or strip(source) != strip(current):
+            edited.append(current["id"])
+    if edited and "--force" not in sys.argv:
+        sys.exit("These profiles were changed in the database since the last merge: " + ", ".join(edited)
+                 + ". Copy those edits into research_notes/profiles_*.json first, or re-run with --force to discard them.")
 
     # Undo any earlier merge so re-running is idempotent.
     people = [p for p in db["people"] if p.get("added_by") != ADDED_TAG]
