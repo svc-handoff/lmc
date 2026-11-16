@@ -5,3 +5,11 @@ backgroundColor = "#faf6ef"
 secondaryBackgroundColor = "#f3ece1"
 textColor = "#2f2a26"
 font = "serif"
+
+[client]
+# Hide developer menu items (rerun, settings, deploy) from visitors.
+toolbarMode = "minimal"
+
+[ui]
+# Hide Streamlit's own top bar so the page starts at the header.
+hideTopBar = true
